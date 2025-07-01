@@ -28,4 +28,5 @@
 
 1. git checkout main -> go back to main branch first
 2. git branch -m branch-old-name branch-new-name
-3. git checkout branch-name -> to go to a specific existing branch
+3. git push -u origin name-of-new-branch
+4. git push origin --delete name-of-old-branch -> delete the old branch name
