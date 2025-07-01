@@ -17,9 +17,9 @@
 ### To push changes in existing file that will be only shown in a new branch
 
 1. git status -> check on what branch you are currently working with
-2. git stash save "message" -> to disable changes that youve done first
+2. git stash save "message" -> to disable changes that youve done first **(do this before switch to other branch and push there the changes)**
 3. git checkout -b name-of-new-branch -> to create a new branch name
-4. git stash pop -> show the changes again in the modified file that you want to push in other branch
+4. git stash pop -> show the changes again in the modified file that you want to push in other branch **(unstach changes once you are in the other branch)**
 5. git add file-name
 6. git commit -m "message"
 7. git push -u origin name-of-new-branch
