@@ -30,3 +30,12 @@
 2. git branch -m branch-old-name branch-new-name
 3. git push -u origin name-of-new-branch
 4. git push origin --delete name-of-old-branch -> delete the old branch name
+
+### to merge changes of a specific file from main to other branch or vice versa
+
+1. git log --oneline -- file_name -> get the changes commit messages ids and copy it
+2. git checkout branch_where_you_want_to_merge_file_changes
+3. git cherry-pick <commit_id>
+4. git add .
+5. git commit -m "message"
+6. git push -u origin branch_name
